@@ -68,8 +68,14 @@ export PATH=$PATH:~/flutter/bin
 which flutter dart
 flutter doctor
 ```
+## set saving projects in internal storage 
+```bash
+mkdir /sdcard/FlutterApps
+cd /sdcard/FlutterApps
+```
 ## Create flutter web app
 ```bash
+cd /sdcard/FlutterApps
 flutter create `web_app_name` --platforms web
 ```
 ## Configure
@@ -78,7 +84,7 @@ flutter config --enable-web
 ```
 ## Run
 ```json
-cd ~/`web_app_name`/
+cd /sdcard/FlutterApps/`web_app_name`/
 
 flutter run -d web-server --web-port 8080 # [Web-Server] : http://localhost:8080
 ```
@@ -86,6 +92,13 @@ flutter run -d web-server --web-port 8080 # [Web-Server] : http://localhost:8080
 + Open Chrome or any browser
 + type [http://localhost:8080](http://localhost:8080) in address bar and search
 + Your app getting run 
+
+## Edit using any editor 
+## and reload using 
++ Open TermUX
++ type r to reload flutter
++ type R to restart flutter
++ type q to exit flutter
 
 
 
