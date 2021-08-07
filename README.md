@@ -58,4 +58,34 @@ echo "user ALL=(ALL:ALL) ALL" >> /etc/sudoers
 ```bash
 sudo apt update -y && sudo apt upgrade -y
 ```
+## Install Flutter from git
+```bash
+sudo apt install git -y
+cd ~
+git clone https://github.com/flutter/flutter.git -b stable
+cd ~
+export PATH=$PATH:~/flutter/bin
+which flutter dart
+flutter doctor
+```
+## Create flutter web app
+```bash
+flutter create `web_app_name` --platforms web
+```
+## Configure
+```bash
+flutter config --enable-web
+```
+## Run
+```json
+cd ~/`web_app_name`/
+
+flutter run -d web-server --web-port 8080 # [Web-Server] : http://localhost:8080
+```
+## How to open app
++ Open Chrome or any browser
++ type [http://localhost:8080](http://localhost:8080) in address bar and search
++ Your app getting run 
+
+
 
