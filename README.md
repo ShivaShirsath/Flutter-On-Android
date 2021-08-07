@@ -49,7 +49,7 @@ echo "user ALL=(ALL:ALL) ALL" >> /etc/sudoers
 ## Restart TermUX
 
 ## Login user
-+ from root 
++ from TermUX 
   
   ```bash
   proot-distro login --user user ubuntu-20.04
